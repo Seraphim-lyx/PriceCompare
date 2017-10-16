@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping package="com.pricecompare.dao.author">
+	<class name="Customer" table="customer">
+		<id	name="id" type="integer" column="id">
+            <generator class="identity"/>
+        </id>
+        <property name="name" column="name" length="100" type="string"/>
+        <property name="password" column="password" length="30" type="string"/>
+        <property name="regitTime" column="regitTime" type="java.util.Date"/>
+        <property name="editTime" column="editTime" type="java.util.Date"/>
+        <property name="sex" column="sex" type="integer"/>
+        <property name="education" column="education" type="integer"/>
+        <property name="phone" column="phone" length="20" type="string"/>
+        <property name="locked" column="locked" type="integer"/>
+        <bag name="keyword"  lazy="false" cascade="all">
+			<key column="keywordid" />
+			<one-to-many class="Keyword" />
+		</bag>
+		<bag name="customerproduct"  lazy="false">
+			<key column="customerproductid" />
+			<one-to-many class="CustomerProduct" />
+		</bag>
+    </class>
+</hibernate-mapping>

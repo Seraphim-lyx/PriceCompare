@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="record" namespace="/admin" extends="json-default">
+		<action name="recordIndex" class="com.pricecompare.system.record.action.RecordAction" method="recordIndex">
+			<result name="success">/admin/record/recordIndex.jsp</result>
+		</action>
+		<action name="recordInfo" class="com.pricecompare.system.record.action.RecordAction" method="recordInfo">
+			<result name="success">/admin/record/recordInfo.jsp</result>
+		</action>
+		<action name="addRecordPage" class="com.pricecompare.system.record.action.RecordAction" method="addRecordPage">
+			<result name="success">/admin/record/addRecord.jsp</result>
+		</action>
+		<action name="editRecordPage" class="com.pricecompare.system.record.action.RecordAction" method="editRecordPage">
+			<result name="success">/admin/record/editRecord.jsp</result>
+		</action>
+		<action name="addRecord" class="com.pricecompare.system.record.action.RecordAction" method="addRecord">
+			<result type="json">
+				<param name="includeproperties">
+    				statusCode,message,callbackType,navTabId
+    			</param>
+			</result>
+		</action>
+		<action name="editRecord" class="com.pricecompare.system.record.action.RecordAction" method="editRecord">
+			<result type="json">
+				<param name="includeproperties">
+    				statusCode,message,callbackType,navTabId
+    			</param>
+			</result>
+		</action>
+		<action name="deleteRecord" class="com.pricecompare.system.record.action.RecordAction" method="deleteRecord">
+			<result type="json">
+				<param name="includeproperties">
+    				statusCode,message,navTabId
+    			</param>
+			</result>
+		</action>
+		<action name="recordSearch" class="com.pricecompare.system.record.action.RecordAction" method="recordSearch">
+			<result name="success">/admin/record/recordIndex.jsp</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping package="com.pricecompare.dao.product">
+	<class name="Type" table="type">
+		<id	name="id" type="integer" column="id">
+            <generator class="identity"/>
+        </id>
+        <property name="name" column="name" type="string" length="300"/>
+        <property name="editTime" column="editTime" type="java.util.Date"/>
+		 <property name="relatename" column="relatename" type="string" length="300"/>
+ 
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping package="com.pricecompare.dao.author">
+	<class name="webpage" table="webpage">
+		 <composite-id><!--联合主键，student表中的主键为(student_name,card_id)-->  
+           <key-property name="mername" column="mername" type="string" length="2048"></key-property><!--name及cardID为Student类中的属性-->  
+           <key-property name="id" column="id" type="string" length="255"></key-property>  
+        </composite-id>  
+<!-- 	<property name="mername" column="mername" type="string" length="2048"/> -->
+	<property name="price" column="price" type="float"/>
+	<property name="detail" column="detail" type="string" length="2048"/>
+	<property name="image" column="image" type="string" length="9999"/>
+	<property name="category" column="category" type="string" length="255"/>
+	<property name="categorydtl" column="categorydtl" type="string" length="255"/>
+	<property name="fromweb" column="fromweb" type="string" length="255"/>
+	<property name="baseUrl" column="baseUrl" type="string" length="767"/>
+	</class>
+</hibernate-mapping>

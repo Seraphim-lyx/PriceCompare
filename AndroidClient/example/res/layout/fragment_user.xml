@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:stretchColumns="2">
+<ImageView  
+    android:id="@+id/ImageView"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:layout_centerHorizontal="true"
+	android:src="@drawable/eagle"
+	/>
+<TextView
+	android:id="@+id/fuText"
+	android:textSize="@dimen/label_font_size"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_below="@+id/ImageView"
+	android:gravity="center"
+	android:padding="@dimen/title_padding"
+	/>	
+<!-- 输入用户名的行 -->
+<Button
+	android:text="管理关键字"
+	android:id="@+id/btnKeyword"
+	android:textSize="@dimen/label_font_size"
+	android:gravity="center"
+	android:layout_below="@+id/fuText"
+	android:layout_marginLeft="50dp"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>
+<Button
+	android:text="修改密码"
+	android:id="@+id/btnChange"
+	android:textSize="@dimen/label_font_size"
+	android:gravity="center"
+	android:layout_below="@+id/fuText"
+	android:layout_marginLeft="450dp"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>
+<!-- 输入密码的行 -->
+<Button
+	android:text="注销用户"
+	android:id="@+id/btnLogout"
+	android:textSize="@dimen/label_font_size"
+	android:gravity="center"
+	android:layout_below="@+id/btnKeyword"
+	android:layout_marginLeft="50dp"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>
+</RelativeLayout>
+
+</FrameLayout>

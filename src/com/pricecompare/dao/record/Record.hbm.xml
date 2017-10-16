@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping package="com.pricecompare.dao.record">
+	<class name="Record" table="record">
+		<id	name="id" type="integer" column="id">
+            <generator class="identity"/>
+        </id>
+        <property name="type" column="type" type="string" length="200"/>
+           <property name="title" column="title" type="string" length="200"/>
+           <property name="editTime" column="editTime" type="java.util.Date"/>
+              <property name="text" column="text" type="string" length="2200"/>
+               <many-to-one name="user" class="com.pricecompare.dao.author.User" column="user_id" lazy="false"/>
+        
+     </class>
+</hibernate-mapping>

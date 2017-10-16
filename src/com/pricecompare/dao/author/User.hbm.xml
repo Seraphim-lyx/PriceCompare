@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping package="com.pricecompare.dao.author">
+	<class name="User" table="user">
+		<id	name="id" type="integer" column="id">
+            <generator class="identity"/>
+        </id>
+        <property name="name" column="name" type="string" length="30"/>
+        <property name="password" column="password" type="binary" length="8"/>
+        <property name="salt" column="salt" type="binary" length="16"/>
+        <property name="regitTime" column="regitTime" type="java.util.Date"/>
+        <property name="editTime" column="editTime" type="java.util.Date"/>
+        <property name="loginTime" column="loginTime" type="java.util.Date"/>
+        <many-to-one name="role" class="Role" column="role_id" lazy="false"/> 
+       
+	</class>
+</hibernate-mapping>

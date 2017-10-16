@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/widget32"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<TableLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:stretchColumns="1">
+<ImageView  
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:scaleType="fitCenter"
+	android:src="@drawable/eagle"
+	/>
+<TableRow>
+    <TextView
+	android:id="@+id/nameText"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="用户名："
+	android:layout_alignParentTop="true"
+	android:textSize="@dimen/label_font_size"
+	android:layout_alignParentLeft="true" />
+<EditText
+	android:id="@+id/edtName"
+	android:layout_width="200dp"
+	android:layout_height="wrap_content"
+	android:text=""
+	android:layout_alignParentTop="true"
+	android:layout_toRightOf="@+id/nameText" />
+</TableRow>
+<TextView
+	android:id="@+id/nameTips"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:text="*请输入用户名,用户名由6-18个英文或数字组成"
+	android:textStyle="bold"
+	android:layout_below="@+id/edtName"
+	android:textSize="@dimen/label_font_size"
+	android:gravity="center"
+	android:layout_alignParentLeft="true" />
+<TableRow>
+    <TextView
+	android:id="@+id/pwdText1"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="密码："
+	android:layout_below="@+id/nameTips"
+	android:textSize="@dimen/label_font_size"
+	android:layout_alignParentLeft="true" />
+<EditText
+	android:id="@+id/edtPwd1"
+	android:layout_width="200dp"
+	android:layout_height="wrap_content"
+	android:text=""
+	android:layout_alignTop="@+id/pwdText1"
+	android:layout_alignLeft="@+id/edtName"
+	android:password="true" />
+</TableRow>
+<TextView
+	android:id="@+id/pwdTips1"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:text="*请输入密码,密码由6-18位英文或数字组成"
+	android:textStyle="bold"
+	android:layout_below="@+id/edtPwd1"
+	android:textSize="@dimen/label_font_size"
+	android:gravity="center"
+	android:layout_alignParentLeft="true" />
+<TableRow>
+<TextView
+	android:id="@+id/pwdText2"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="重复密码："
+	android:layout_below="@+id/pwdTips1"
+	android:textSize="@dimen/label_font_size"
+	android:layout_alignParentLeft="true" />
+<EditText
+	android:id="@+id/edtPwd2"
+	android:layout_width="200dp"
+	android:layout_height="wrap_content"
+	android:text=""
+	android:layout_alignTop="@+id/pwdText2"
+	android:layout_alignLeft="@+id/edtPwd1" 
+	android:password="true"/>
+</TableRow>
+<TextView
+	android:id="@+id/pwdTips2"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:text="*请再次输入密码"
+	android:textStyle="bold"
+	android:layout_below="@+id/edtPwd2"
+	android:textSize="@dimen/label_font_size"
+	android:gravity="center"
+	android:layout_alignParentLeft="true" />
+<TableRow>
+<TextView
+	android:id="@+id/phoneText"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="手机号："
+	android:layout_below="@+id/pwdTips2"
+	android:textSize="@dimen/label_font_size"
+	android:layout_alignParentLeft="true" />
+<EditText
+	android:id="@+id/edtPhone"
+	android:layout_width="200dp"
+	android:layout_height="wrap_content"
+	android:text=""
+	android:layout_alignTop="@+id/phoneText"
+	android:layout_alignLeft="@+id/edtPwd2" 
+	android:numeric="integer"
+	android:singleLine="true"/>
+</TableRow>
+<TextView
+	android:id="@+id/phoneTips"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:text="*请输入手机号"
+	android:textStyle="bold"
+	android:layout_below="@+id/edtPhone"
+	android:textSize="@dimen/label_font_size"
+	android:gravity="center"
+	android:layout_alignParentLeft="true" />
+<TableRow>
+    <TextView
+	android:id="@+id/sexText"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="性别："
+	android:layout_below="@+id/phoneTips"
+	android:textSize="@dimen/label_font_size"
+	android:layout_alignParentLeft="true" />
+    <RadioGroup 
+        android:id="@+id/sexGroup"
+         android:contentDescription="性别" 
+         android:layout_width="wrap_content" 
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/phoneTips">
+    <RadioButton 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/radioMale" 
+        android:text="男" ></RadioButton>
+    <RadioButton 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/radioFemale" 
+        android:text="女"></RadioButton>    
+  </RadioGroup>
+</TableRow>
+<TableRow>
+    <TextView
+	android:id="@+id/eduText"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="学历："
+	android:layout_below="@+id/sexText"
+	android:textSize="@dimen/label_font_size"
+	android:layout_alignParentLeft="true" />
+    <RadioGroup 
+        android:id="@+id/eduGroup"
+         android:contentDescription="学历" 
+         android:layout_width="wrap_content" 
+         android:layout_height="wrap_content">
+    <RadioButton 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/radioPrimary" 
+        android:text="小学" ></RadioButton>
+    <RadioButton 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/radioJunior" 
+        android:text="初中"></RadioButton> 
+    <RadioButton 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/radioSenior" 
+        android:text="高中"></RadioButton>  
+    <RadioButton 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/radioUniversity" 
+        android:text="本科及以上"></RadioButton>     
+  </RadioGroup>
+</TableRow>
+<LinearLayout android:orientation="horizontal"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	>
+<Button
+	android:id="@+id/btnRegister"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="注册"
+	android:layout_below="@+id/phoneTips"
+	android:layout_alignRight="@+id/edtPhone" />
+<Button
+	android:id="@+id/btnCancel"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="取消"
+	android:layout_alignTop="@+id/btnCancel"
+	android:layout_alignLeft="@+id/edtPhone" />
+</LinearLayout>
+</TableLayout>
+</RelativeLayout>

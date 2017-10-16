@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	
+<struts>
+<package name="android" namespace="/admin" extends="json-default">
+<action name="androidIndex" class="com.pricecompare.system.android.action.AndroidAction" method="androidIndex">
+	<result name="success">/admin/android/androidIndex.jsp</result>
+</action>
+<action name="androidPush" class="com.pricecompare.system.android.action.AndroidAction" method="androidPush">
+	<result name="success">/admin/android/androidPush.jsp</result>
+</action>
+<action name="androidProductSearch"  class="com.pricecompare.system.android.action.AndroidAction" method="androidProductSearch">
+	<result name="success">/admin/android/androidIndex.jsp</result>
+</action>
+<action name="androidProductMessage"  class="com.pricecompare.system.android.action.AndroidAction" method="androidProductMessage">
+	<result name="success">/admin/android/androidProductMessage.jsp</result>
+</action>
+<action name="removePush" class="com.pricecompare.system.android.action.AndroidAction" method="removePush">
+	<result type="json">
+		<param name="includeproperties">
+    				statusCode,message,navTabId
+    	</param>
+	</result>
+</action>
+
+<action name="androidPushOrder"  class="com.pricecompare.system.android.action.AndroidAction" method="androidPushOrder">
+	<result name="success">/admin/android/androidClickIndex.jsp</result>
+</action>
+<action name="androidClickPriceOrder"  class="com.pricecompare.system.android.action.AndroidAction" method="androidClickPriceOrder">
+	<result name="success">/admin/android/androidClickIndex.jsp</result>
+</action>
+<action name="androidClickCountOrder"  class="com.pricecompare.system.android.action.AndroidAction" method="androidClickCountOrder">
+	<result name="success">/admin/android/androidClickIndex.jsp</result>
+</action>
+<action name="androidPushPointed"  class="com.pricecompare.system.android.action.AndroidAction" method="androidPushPointed">
+	<result name="success">/admin/android/androidPointedIndex.jsp</result>
+</action>
+<action name="androidPricePointed"  class="com.pricecompare.system.android.action.AndroidAction" method="androidPricePointed">
+	<result name="success">/admin/android/androidPointedIndex.jsp</result>
+</action>
+
+<action name="androidPushChoose" class="com.pricecompare.system.android.action.AndroidAction" method="androidPushChoose">
+	<result type="json">
+		<param name="includeproperties">
+    				statusCode,message,callbackType,navTabId
+    	</param>
+	</result>
+</action>
+<action name="AndroidProductData" class="com.pricecompare.system.android.action.AndroidAction" method="AndroidProductData">
+	<result name="success">/admin/android/AndroidProductData.jsp</result>
+</action>
+<action name="androidSearchPage" class="com.pricecompare.system.android.action.AndroidAction" method="searchPage">
+	<result name="success">/admin/android/searchPage.jsp</result>
+</action>
+<action name="nameAndroidSearch" class="com.pricecompare.system.data.action.DataAction" method="nameDataSearch">
+		<result name="success">/admin/android/androidIndex.jsp</result>
+</action>
+<action name="typeAndroidSearch" class="com.pricecompare.system.data.action.DataAction" method="typeDataSearch">
+		<result name="success">/admin/android/androidIndex.jsp</result>
+</action>
+<action name="priceAndroidSearch" class="com.pricecompare.system.data.action.DataAction" method="priceDataSearch">
+	<result name="success">/admin/android/androidIndex.jsp</result>
+</action>
+<action name="mixAndroidSearch" class="com.pricecompare.system.data.action.DataAction" method="mixDataSearch">
+		<result name="success">/admin/android/androidIndex.jsp</result>
+	</action>
+</package>
+</struts>

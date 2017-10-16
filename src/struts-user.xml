@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="admin" namespace="/admin" extends="json-default">
+		<action name="error" class="com.pricecompare.system.author.action.UserAction" method="error">
+			<result name="success">/admin/error.jsp</result>
+		</action>
+		<action name="loginPage" class="com.pricecompare.system.author.action.UserAction" method="index">
+			<result name="success">/admin/login.jsp</result>
+		</action>
+		<action name="login" class="com.pricecompare.system.author.action.UserAction" method="login">
+			<result type="json">
+				<param name="includeproperties">
+					result
+				</param>
+			</result>
+		</action>
+		<action name="logout" class="com.pricecompare.system.author.action.UserAction" method="logout">
+			<result type="chain">loginPage</result>
+		</action>
+		<action name="adminIndex" class="com.pricecompare.system.author.action.UserAction" method="adminIndex">
+			<result name="success">/admin/index.jsp</result>
+		</action>
+		
+		<!-- user -->
+		<action name="userList" class="com.pricecompare.system.author.action.UserAction" method="userList">
+			<result name="success">/admin/author/userList.jsp</result>
+		</action>
+		<action name="userSearch" class="com.pricecompare.system.author.action.UserAction" method="userSearch">
+			<result name="success">/admin/author/userList.jsp</result>
+		</action>
+		<action name="roleSearch" class="com.pricecompare.system.author.action.UserAction" method="roleSearch">
+			<result name="success">/admin/author/userList.jsp</result>
+		</action>
+		<action name="deleteUser" class="com.pricecompare.system.author.action.UserAction" method="deleteUser">
+			<result type="json"></result>
+		</action>
+		<action name="addUser" class="com.pricecompare.system.author.action.UserAction" method="addUser">
+			<result name="success">/admin/author/addUser.jsp</result>
+		</action>
+		<action name="editUser" class="com.pricecompare.system.author.action.UserAction" method="editUser">
+			<result name="success">/admin/author/editUser.jsp</result>
+		</action>
+		<action name="doEditUser" class="com.pricecompare.system.author.action.UserAction" method="doEditUser">
+			<result type="json">
+				<param name="includeproperties">
+    				statusCode,message,callbackType,navTabId
+    			</param>
+			</result>
+		</action>
+		<action name="register" class="com.pricecompare.system.author.action.UserAction" method="register">
+			<result type="json">
+				<param name="includeproperties">
+    				statusCode,message,callbackType,navTabId
+    			</param>
+    		
+			</result>
+		</action>
+		<!-- user -->
+	</package>
+
+</struts>

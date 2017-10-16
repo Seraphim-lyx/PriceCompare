@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	
+<struts>
+<package name="data" namespace="/admin" extends="json-default">
+	<action name="dataOrder" class="com.pricecompare.system.data.action.OrderAction" method="dataOrder">
+		<result name="success">/admin/data/dataOrder.jsp</result>
+	</action>
+	<action name="yearOrder" class="com.pricecompare.system.data.action.OrderAction" method="yearOrder">
+		<result name="success">/admin/data/dataOrder.jsp</result>
+	</action>
+	<action name="seasonOrder" class="com.pricecompare.system.data.action.OrderAction" method="seasonOrder">
+		<result name="success">/admin/data/dataOrder.jsp</result>
+	</action>
+	<action name="monthOrder" class="com.pricecompare.system.data.action.OrderAction" method="monthOrder">
+		<result name="success">/admin/data/dataOrder.jsp</result>
+	</action>
+	
+	<action name="productPointed" class="com.pricecompare.system.data.action.DataAction" method="productPointed">
+		<result type="json">
+			<param name="includeproperties">
+    				statusCode,callbackType,forwardUrl
+    		</param>
+		</result>
+	</action>
+	
+	
+	<action name="dataIndex" class="com.pricecompare.system.data.action.DataAction" method="dataIndex">
+		<result name="success">/admin/data/dataIndex.jsp</result>
+	</action>
+	<action name="dataMessage" class="com.pricecompare.system.data.action.DataAction" method="dataMessage">
+		<result name="success">/admin/data/dataMessage.jsp</result>
+	</action>
+	<action name="addMessage" class="com.pricecompare.system.data.action.DataAction" method="addMessage">
+		<result type="json">
+			<param name="includeproperties">
+    				statusCode,message,callbackType,navTabId
+    		</param>
+		</result>
+	</action>
+	<action name="dataPointedList" class="com.pricecompare.system.data.action.DataAction" method="dataPointedList">
+		<result name="success">/admin/data/dataIndex.jsp</result>
+	</action>
+	<action name="dataSearch" class="com.pricecompare.system.data.action.DataAction" method="productSearch">
+		<result name="success">/admin/data/dataIndex.jsp</result>
+	</action>
+	<action name="yearData" class="com.pricecompare.system.data.action.DataAction" method="yearData">
+		<result name="success">/admin/data/yearData.jsp</result>
+	</action>
+	<action name="seasonData" class="com.pricecompare.system.data.action.DataAction" method="seasonData">
+		<result name="success">/admin/data/seasonData.jsp</result>
+	</action>
+	<action name="monthData" class="com.pricecompare.system.data.action.DataAction" method="monthData">
+		<result name="success">/admin/data/monthData.jsp</result>
+	</action>
+	<action name="dataTest" class="com.pricecompare.system.data.action.DataAction" method="dataTest">
+		<result type="json">
+			<param name="includeproperties">
+    				statusCode,message,callbackType,navTabId
+    		</param>
+		</result>
+	</action>
+	<action name="dataSearchPage" class="com.pricecompare.system.data.action.DataAction" method="searchPage">
+		<result name="success">/admin/data/searchPage.jsp</result>
+	</action>
+	<action name="nameDataSearch" class="com.pricecompare.system.data.action.DataAction" method="nameDataSearch">
+		<result name="success">/admin/data/dataIndex.jsp</result>
+	</action>
+	<action name="typeDataSearch" class="com.pricecompare.system.data.action.DataAction" method="typeDataSearch">
+		<result name="success">/admin/data/dataIndex.jsp</result>
+	</action>
+	<action name="priceDataSearch" class="com.pricecompare.system.data.action.DataAction" method="priceDataSearch">
+		<result name="success">/admin/data/dataIndex.jsp</result>
+	</action>
+	<action name="mixDataSearch" class="com.pricecompare.system.data.action.DataAction" method="mixDataSearch">
+		<result name="success">/admin/data/dataIndex.jsp</result>
+	</action>
+</package> 
+
+</struts>

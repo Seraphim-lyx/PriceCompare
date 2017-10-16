@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+	<!-- 开发模式 -->
+    <constant name="struts.devMode" value="true" />
+<!--     编码 -->
+    <constant name="struts.i18n.encoding" value="UTF-8" />
+<!--     重新加载xml -->
+    <constant name="struts.configuration.xml.reload" value="true" />
+    
+	
+<!-- 	</package> -->
+<!-- <package name="index" namespace="/index" extends="json-default"> -->
+<!-- 		<action name="loginPage" class="com.pricecompare.system.author.action.UserAction" method="index"> -->
+<!-- 			<result name="success">/admin/login.jsp</result> -->
+<!-- 		</action> -->
+<!-- </package> -->
+	 <include file="struts-user.xml" />
+	 <include file="struts-data.xml"/>
+	 <include file="struts-product.xml"/>
+	 <include file="struts-android.xml"/>
+	 <include file="struts-customer.xml"/>
+	 <include file="struts-client.xml"/>
+	 <include file="struts-record.xml"/>
+	
+</struts>

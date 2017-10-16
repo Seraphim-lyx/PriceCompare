@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping package="com.pricecompare.dao.product">
+	<class name="Product" table="product">
+		<id	name="id" type="integer" column="id">
+            <generator class="identity"/>
+        </id>
+        <many-to-one name="info" class="Info" column="info_id" unique="true" lazy="false" cascade="all"/>
+         <many-to-one name="description" class="Description" column="description_id" unique="true" lazy="false" cascade="all"/>
+          <many-to-one name="message" class="Message" column="message_id" unique="true" lazy="false" cascade="all"/>
+           <many-to-one name="brand" class="Brand" column="brand_id" lazy="false"/>
+         <bag name="picture"  lazy="false" cascade="all">
+			<key column="pictureid" />
+			<one-to-many class="Picture" />
+			</bag>
+           
+            <bag name="comment"  lazy="false" cascade="all">
+			<key column="commentid" />
+			<one-to-many class="Comment" />
+			</bag>
+         <property name="pointed" column="pointed" type="integer"/>
+         
+         
+	</class>
+</hibernate-mapping>

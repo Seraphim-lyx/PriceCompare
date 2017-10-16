@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<admin>
+		<path>adminIndex</path>
+		<path>userList</path>
+		<path>userSearch</path>
+		<path>roleSearch</path>
+		<path>deleteUser</path>
+		<path>addUser</path>
+		<path>editUser</path>
+		<path>doEditUser</path>
+		<path>register</path>
+		
+		<path>productType</path>
+		<path>productBrand</path>
+		<path>typeSearch</path>
+		<path>brandSearch</path>
+		<path>addPage</path>
+		<path>updatePage</path>
+		<path>addType</path>
+		<path>addBrand</path>
+		<path>updateType</path>
+		<path>updateBrand</path>
+		<path>delType</path>
+		<path>delBrand</path>
+		<path>typeToBrand</path>
+		<path>targetType</path>
+		<path>combineType</path>
+		<path>targetBrand</path>
+		<path>combineBrand</path>
+		<path>productIndex</path>
+		<path>productInfo</path>
+		<path>productTypeSearch</path>
+		<path>editProductPage</path>
+		<path>editDescriptionPage</path>
+		<path>updateDescription</path>
+		<path>productUpdate</path>
+		<path>productDelete</path>
+		<path>addPicPage</path>
+		<path>addPic</path>
+		<path>deletePic</path>
+		<path>picTest</path>
+		<path>productSearch</path>
+		<path>productSearchPage</path>
+		<path>nameProductSearch</path>
+		<path>typeProductSearch</path>
+		<path>priceProductSearch</path>
+		<path>mixProductSearch</path>
+		
+		<path>recordIndex</path>
+		<path>recordInfo</path>
+		<path>addRecordPage</path>
+		<path>editRecordPage</path>
+		<path>addRecord</path>
+		<path>editRecord</path>
+		<path>deleteRecord</path>
+		<path>recordSearch</path>
+		
+		<path>typeToBrand</path>
+		<path>adminIndex</path>
+		<path>customerIndex</path>
+		<path>customerSearch</path>
+		<path>customerUpdatePage</path>
+		<path>customerUpdate</path>
+		<path>customerAddPage</path>
+		
+		<path>customerSave</path>
+		<path>customerDelete</path>
+		
+		<path>customerLock</path>
+		<path>customerKeyword</path>
+		<path>customerProduct</path>
+		<path>customerAnalysis</path>
+		<path>customerEduAnalysis</path>
+		<path>customerSexAnalysis</path>
+		
+		<path>androidIndex</path>
+		<path>androidPush</path>
+		<path>androidProductSearch</path>
+		<path>androidProductMessage</path>
+		<path>removePush</path>
+		<path>androidPushOrder</path>
+		<path>androidClickPriceOrder</path>
+		
+		<path>androidClickCountOrder</path>
+		<path>androidPushPointed</path>
+		
+		<path>androidPricePointed</path>
+		<path>androidPushChoose</path>
+		<path>AndroidProductData</path>
+		<path>androidSearchPage</path>
+		<path>nameAndroidSearch</path>
+		<path>typeAndroidSearch</path>
+		<path>priceAndroidSearch</path>
+		<path>mixAndroidSearch</path>
+		
+		<path>typeToBrand</path>
+		<path>adminIndex</path>
+		<path>dataOrder</path>
+		<path>yearOrder</path>
+		<path>seasonOrder</path>
+		<path>monthOrder</path>
+		<path>productPointed</path>
+		<path>dataIndex</path>
+		<path>dataMessage</path>
+		<path>addMessage</path>
+		<path>dataPointedList</path>
+		<path>dataSearch</path>
+		<path>yearData</path>
+		<path>seasonData</path>
+		<path>monthData</path>
+		<path>dataTest</path>
+		<path>dataSearchPage</path>
+		<path>nameDataSearch</path>
+		<path>typeDataSearch</path>
+		<path>priceDataSearch</path>
+		<path>mixDataSearch</path>
+	</admin>
+	
+	<android>
+		<path>typeToBrand</path>
+		<path>adminIndex</path>
+		<path>customerIndex</path>
+		<path>customerSearch</path>
+		<path>customerUpdatePage</path>
+		<path>customerUpdate</path>
+		<path>customerAddPage</path>
+		
+		<path>customerSave</path>
+		<path>customerDelete</path>
+		
+		<path>customerLock</path>
+		<path>customerKeyword</path>
+		<path>customerProduct</path>
+		<path>customerAnalysis</path>
+		<path>customerEduAnalysis</path>
+		<path>customerSexAnalysis</path>
+		
+		<path>androidIndex</path>
+		<path>androidPush</path>
+		<path>androidProductSearch</path>
+		<path>androidProductMessage</path>
+		<path>removePush</path>
+		<path>androidPushOrder</path>
+		<path>androidClickPriceOrder</path>
+		
+		<path>androidClickCountOrder</path>
+		<path>androidPushPointed</path>
+		
+		<path>androidPricePointed</path>
+		<path>androidPushChoose</path>
+		<path>AndroidProductData</path>
+		<path>androidSearchPage</path>
+		<path>nameAndroidSearch</path>
+		<path>typeAndroidSearch</path>
+		<path>priceAndroidSearch</path>
+		<path>mixAndroidSearch</path>
+		
+		<path>recordIndex</path>
+		<path>recordInfo</path>
+		<path>addRecordPage</path>
+		<path>editRecordPage</path>
+		<path>addRecord</path>
+		<path>editRecord</path>
+		<path>deleteRecord</path>
+		<path>recordSearch</path>
+	</android>
+	
+	<data>
+		<path>typeToBrand</path>
+		<path>adminIndex</path>
+		<path>dataOrder</path>
+		<path>yearOrder</path>
+		<path>seasonOrder</path>
+		<path>monthOrder</path>
+		<path>productPointed</path>
+		<path>dataIndex</path>
+		<path>dataMessage</path>
+		<path>addMessage</path>
+		<path>dataPointedList</path>
+		<path>dataSearch</path>
+		<path>yearData</path>
+		<path>seasonData</path>
+		<path>monthData</path>
+		<path>dataTest</path>
+		<path>dataSearchPage</path>
+		<path>nameDataSearch</path>
+		<path>typeDataSearch</path>
+		<path>priceDataSearch</path>
+		<path>mixDataSearch</path>
+		
+		<path>recordIndex</path>
+		<path>recordInfo</path>
+		<path>addRecordPage</path>
+		<path>editRecordPage</path>
+		<path>addRecord</path>
+		<path>editRecord</path>
+		<path>deleteRecord</path>
+		<path>recordSearch</path>
+	</data>
+</root>
+

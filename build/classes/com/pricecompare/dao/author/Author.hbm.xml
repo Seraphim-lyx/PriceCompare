@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping package="com.pricecompare.dao.author">
+	<class name="Author" table="author">
+		<id	name="id" type="integer" column="id">
+            <generator class="identity"/>
+        </id>
+       	<property name="path" column="path" type="string" length="30"/>
+       	
+	</class>
+</hibernate-mapping>

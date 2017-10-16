@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	
+	
+	
+<struts>
+<package name="product" namespace="/admin" extends="json-default">
+
+<!-- productType -->
+<action name="productType" class="com.pricecompare.system.product.action.ProductTypeAction" method="productType">
+	<result name="success">/admin/product/productType.jsp</result>
+</action>
+<action name="productBrand" class="com.pricecompare.system.product.action.ProductTypeAction" method="productBrand">
+	<result name="success">/admin/product/productBrand.jsp</result>
+</action>
+<action name="typeSearch" class="com.pricecompare.system.product.action.ProductTypeAction" method="typeSearch">
+	<result name="success">/admin/product/productType.jsp</result>
+</action>
+<action name="brandSearch" class="com.pricecompare.system.product.action.ProductTypeAction" method="brandSearch">
+	<result name="success">/admin/product/productBrand.jsp</result>
+</action>
+<action name="addPage" class="com.pricecompare.system.product.action.ProductTypeAction" method="addPage">
+	<result name="success">/admin/product/addPage.jsp</result>
+</action>
+<action name="updatePage" class="com.pricecompare.system.product.action.ProductTypeAction" method="updatePage">
+	<result name="success">/admin/product/updatePage.jsp</result>
+</action>
+<action name="addType" class="com.pricecompare.system.product.action.ProductTypeAction" method="addType">
+	<result type="json">
+		<param name="includeproperties">
+    				statusCode,message,callbackType,navTabId
+    	</param>
+	</result>
+</action>
+<action name="addBrand" class="com.pricecompare.system.product.action.ProductTypeAction" method="addBrand">
+	<result type="json">
+		<param name="includeproperties">
+    				statusCode,message,callbackType,navTabId
+    	</param>
+	</result>
+</action>
+<action name="updateType" class="com.pricecompare.system.product.action.ProductTypeAction" method="updateType">
+	<result type="json">
+		<param name="includeproperties">
+    				statusCode,message,callbackType,navTabId
+    	</param>
+	</result>
+</action>
+<action name="updateBrand" class="com.pricecompare.system.product.action.ProductTypeAction" method="updateBrand">
+	<result type="json">
+		<param name="includeproperties">
+    				statusCode,message,callbackType,navTabId
+    	</param>
+	</result>
+</action>
+<action name="delType" class="com.pricecompare.system.product.action.ProductTypeAction" method="delType">
+	<result type="json">
+		<param name="includeproperties">
+    				statusCode,message,navTabId
+    	</param>
+	</result>
+</action>
+<action name="delBrand" class="com.pricecompare.system.product.action.ProductTypeAction" method="delBrand">
+	<result type="json">
+		<param name="includeproperties">
+    				statusCode,message,navTabId
+    	</param>
+	</result>
+</action>
+<action name="typeToBrand" class="com.pricecompare.system.product.action.ProductTypeAction" method="typeToBrand">
+	    <result type="stream">
+                                    <param name="contentType">text/html</param>
+                                    <param name="inputName">is</param>
+                       </result>
+</action>
+<action name="targetType" class="com.pricecompare.system.product.action.ProductTypeAction" method="targetType">
+	<result name="success">/admin/product/targetType.jsp</result>
+</action>
+<action name="combineType" class="com.pricecompare.system.product.action.ProductTypeAction" method="combineType">
+	<result type="json">
+		<param name="includeproperties">
+    				statusCode,message,callbackType,navTabId
+    	</param>
+	</result>
+</action>
+<action name="targetBrand" class="com.pricecompare.system.product.action.ProductTypeAction" method="targetBrand">
+	<result name="success">/admin/product/targetBrand.jsp</result>
+</action>
+<action name="combineBrand" class="com.pricecompare.system.product.action.ProductTypeAction" method="combineBrand">
+	<result type="json">
+		<param name="includeproperties">
+    				statusCode,message,callbackType,navTabId
+    	</param>
+	</result>
+</action>
+<!-- productType -->
+
+<!-- product -->
+<action name="productIndex" class="com.pricecompare.system.product.action.ProductAction" method="productIndex">
+	<result name="success">/admin/product/productList.jsp</result>
+</action>
+<action name="productInfo" class="com.pricecompare.system.product.action.ProductAction" method="productInfo">
+	<result name="success">/admin/product/productInfo.jsp</result>
+</action>
+<action name="productTypeSearch" class="com.pricecompare.system.product.action.ProductAction" method="productTypeSearch">
+	<result name="success">/admin/product/productList.jsp</result>
+</action>
+<action name="editProductPage" class="com.pricecompare.system.product.action.ProductAction" method="editProductPage">
+	<result name="success">/admin/product/editProductPage.jsp</result>
+</action>
+<action name="editDescriptionPage" class="com.pricecompare.system.product.action.ProductAction" method="editDescriptionPage">
+	<result name="success">/admin/product/editDescription.jsp</result>
+</action>
+<action name="updateDescription" class="com.pricecompare.system.product.action.ProductAction" method="updateDescription">
+	<result type="json">
+		<param name="includeproperties">
+    				statusCode,message,callbackType,navTabId
+    	</param>
+	</result>
+</action>
+<action name="productUpdate" class="com.pricecompare.system.product.action.ProductAction" method="productUpdate">
+	<result type="json">
+		<param name="includeproperties">
+    				statusCode,message,callbackType,navTabId
+    	</param>
+	</result>
+</action>
+<action name="productDelete" class="com.pricecompare.system.product.action.ProductAction" method="productDelete">
+	<result type="json">
+		<param name="includeproperties">
+    				statusCode,message,navTabId
+    	</param>
+	</result>
+</action>
+<action name="addPicPage" class="com.pricecompare.system.product.action.ProductAction" method="addPicPage">
+	<result name="success">/admin/product/addPicPage.jsp</result>
+</action>
+<action name="addPic" class="com.pricecompare.system.product.action.ProductAction" method="addPic">
+	<result type="json">
+		<param name="includeproperties">
+    				statusCode,message,callbackType,navTabId
+    	</param>
+	</result>
+</action>
+<action name="deletePic" class="com.pricecompare.system.product.action.ProductAction" method="deletePic">
+	<result type="json">
+		<param name="includeproperties">
+    				statusCode,message,callbackType,forwardUrl
+    	</param>
+	</result>
+</action>
+<action name="picTest" class="com.pricecompare.system.product.action.ProductAction" method="picTest">
+	<result name="success">/admin/product/picTest.jsp</result>
+</action>
+<action name="productSearch" class="com.pricecompare.system.product.action.ProductAction" method="productSearch">
+	<result name="success">/admin/product/productList.jsp</result>
+</action>
+<action name="productSearchPage" class="com.pricecompare.system.product.action.ProductAction" method="searchPage">
+	<result name="success">/admin/product/searchPage.jsp</result>
+</action>
+<action name="nameProductSearch" class="com.pricecompare.system.data.action.DataAction" method="nameDataSearch">
+		<result name="success">/admin/product/productList.jsp</result>
+</action>
+<action name="typeProductSearch" class="com.pricecompare.system.data.action.DataAction" method="typeDataSearch">
+		<result name="success">/admin/product/productList.jsp</result>
+</action>
+<action name="priceProductSearch" class="com.pricecompare.system.data.action.DataAction" method="priceDataSearch">
+	<result name="success">/admin/product/productList.jsp</result>
+</action>
+<action name="mixProductSearch" class="com.pricecompare.system.data.action.DataAction" method="mixDataSearch">
+	<result name="success">/admin/product/productList.jsp</result>
+</action>
+
+<!-- product -->
+</package>
+
+
+</struts>

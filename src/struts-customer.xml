@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+<package name="customer" namespace="/admin" extends="json-default">
+	<action name="customerIndex" class="com.pricecompare.system.android.action.CustomerAction" method="customerIndex">
+		<result name="success">/admin/android/customerIndex.jsp</result>
+	</action>
+	<action name="customerSearch" class="com.pricecompare.system.android.action.CustomerAction" method="customerSearch">
+		<result name="success">/admin/android/customerIndex.jsp</result>
+	</action>
+	<action name="customerUpdatePage" class="com.pricecompare.system.android.action.CustomerAction" method="customerUpdatePage">
+		<result name="success">/admin/android/customerUpdatePage.jsp</result>
+	</action>
+	<action name="customerUpdate" class="com.pricecompare.system.android.action.CustomerAction" method="customerUpdate">
+		<result type="json">
+			<param name="includeproperties">
+    				statusCode,message,callbackType,navTabId
+    			</param>
+		</result>
+	</action>
+	<action name="customerAddPage" class="com.pricecompare.system.android.action.CustomerAction" method="customerAddPage">
+		<result name="success">/admin/android/customerAddPage.jsp</result>
+	</action>
+	<action name="customerSave" class="com.pricecompare.system.android.action.CustomerAction" method="customerSave">
+		<result type="json">
+			<param name="includeproperties">
+    				statusCode,message,callbackType,navTabId
+    			</param>
+		</result>
+	</action>
+	<action name="customerDelete" class="com.pricecompare.system.android.action.CustomerAction" method="customerDelete">
+		<result type="json">
+			<param name="includeproperties">
+    				statusCode,message,navTabId
+    			</param>
+		</result>
+	</action>
+	<action name="customerLock" class="com.pricecompare.system.android.action.CustomerAction" method="customerLock">
+		<result type="json">
+			<param name="includeproperties">
+    				statusCode,message,navTabId
+    			</param>
+		</result>
+	</action>
+	<action name="customerKeyword" class="com.pricecompare.system.android.action.CustomerAction" method="customerKeyword">
+		<result name="success">/admin/android/customerKeyword.jsp</result>
+	</action>
+	<action name="customerProduct" class="com.pricecompare.system.android.action.CustomerAction" method="customerProduct">
+		<result name="success">/admin/android/customerProduct.jsp</result>
+	</action>
+	<action name="customerAnalysis" class="com.pricecompare.system.android.action.CustomerAction" method="customerAnalysis">
+		<result name="success">/admin/android/customerAnalysis.jsp</result>
+	</action>
+	<action name="customerEduAnalysis" class="com.pricecompare.system.android.action.CustomerAction" method="customerEduAnalysis">
+		<result name="success">/admin/android/customerEduAnalysis.jsp</result>
+	</action>
+	<action name="customerSexAnalysis" class="com.pricecompare.system.android.action.CustomerAction" method="customerSexAnalysis">
+		<result name="success">/admin/android/customerSexAnalysis.jsp</result>
+	</action>
+</package>
+</struts>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping package="com.pricecompare.dao.product">
+	<class name="MonthClick" table="monthclick">
+		<id	name="id" type="integer" column="id">
+            <generator class="identity"/>
+        </id>
+        <property name="month" column="month" type="integer" index="month_index"/>
+        <property name="count" column="count" type="integer"/>
+        <many-to-one name="yearclick" class="YearClick" column="yearclick_id" lazy="false"/>
+    </class>
+
+</hibernate-mapping>

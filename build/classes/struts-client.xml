@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	
+<struts>
+<package name="client" namespace="/" extends="json-default">
+<action name="test" class="com.pricecompare.android.action.ProductAction" method="test">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+<action name="push" class="com.pricecompare.android.action.PushAction" method="push">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+<action name="brand" class="com.pricecompare.android.action.ProductAction" method="brand">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+<action name="type" class="com.pricecompare.android.action.ProductAction" method="type">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+<action name="search" class="com.pricecompare.android.action.ProductAction" method="search">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+<action name="searchBrand" class="com.pricecompare.android.action.ProductAction" method="searchBrand">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+<action name="changeSequence" class="com.pricecompare.android.action.ProductAction" method="changeSequence">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+<action name="changePage" class="com.pricecompare.android.action.ProductAction" method="changePage">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+<action name="login" class="com.pricecompare.android.action.CustomerAction" method="login">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+<action name="isOpw" class="com.pricecompare.android.action.CustomerAction" method="isOpw">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+<action name="changePwd" class="com.pricecompare.android.action.CustomerAction" method="changePwd">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+<action name="register" class="com.pricecompare.android.action.CustomerAction" method="register">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+<action name="click" class="com.pricecompare.android.action.CustomerAction" method="click">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+<action name="logout" class="com.pricecompare.android.action.CustomerAction" method="logout">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+<action name="comment" class="com.pricecompare.android.action.CommentAction" method="comment">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+<action name="getListComment" class="com.pricecompare.android.action.CommentAction" method="getListComment">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+<action name="getListKeyword" class="com.pricecompare.android.action.KeywordAction" method="getListKeyword">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+<action name="getKeyword" class="com.pricecompare.android.action.KeywordAction" method="getKeyword">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+<action name="setKeyword" class="com.pricecompare.android.action.KeywordAction" method="setKeyword">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+<action name="deleteKeyword" class="com.pricecompare.android.action.KeywordAction" method="deleteKeyword">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+<action name="getListCustomerProduct" class="com.pricecompare.android.action.CustomerProductAction" method="getListCustomerProduct">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+<action name="isCustomerProduct" class="com.pricecompare.android.action.CustomerProductAction" method="isCustomerProduct">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+<action name="setCustomerProduct" class="com.pricecompare.android.action.CustomerProductAction" method="setCustomerProduct">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+<action name="deleteCustomerProduct" class="com.pricecompare.android.action.CustomerProductAction" method="deleteCustomerProduct">
+	<result type="json">
+		<param name="root">result</param>
+	</result>
+</action>
+</package>
+</struts>
